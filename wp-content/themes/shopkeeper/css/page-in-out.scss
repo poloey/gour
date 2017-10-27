@@ -1,0 +1,15 @@
+#st-container
+{
+	opacity: .2;
+	transition: opacity .7s;
+
+	&.fade_in
+	{
+		opacity: 1;
+	}
+
+	&.fade_out
+	{
+		opacity: .2;
+	}
+}

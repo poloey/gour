@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Shopkeeper-Icon-Font';
+  src:  url('fonts/Shopkeeper-Icon-Font.eot?21221n');
+  src:  url('fonts/Shopkeeper-Icon-Font.eot?21221n#iefix') format('embedded-opentype'),
+    url('fonts/Shopkeeper-Icon-Font.woff2?21221n') format('woff2'),
+    url('fonts/Shopkeeper-Icon-Font.ttf?21221n') format('truetype'),
+    url('fonts/Shopkeeper-Icon-Font.woff?21221n') format('woff'),
+    url('fonts/Shopkeeper-Icon-Font.svg?21221n#Shopkeeper-Icon-Font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Shopkeeper-Icon-Font';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.spk-icon-warning:before {
+  content: "\e900";
+}
+.spk-icon-arrow-left:before {
+  content: "\e901";
+}
+.spk-icon-arrow-right:before {
+  content: "\e902";
+}
+.spk-icon-view:before {
+  content: "\e903";
+}
+.spk-icon-heart-full:before {
+  content: "\e904";
+}
+.spk-icon-heart:before {
+  content: "\e905";
+}
+.spk-icon-cart-shopkeeper:before {
+  content: "\e908";
+}
+.spk-icon-noun_150444:before {
+  content: "\e906";
+}
+.spk-icon-search:before {
+  content: "\e907";
+}
+

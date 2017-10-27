@@ -1,0 +1,140 @@
+.gbt-header
+{
+	.gbt-logo
+	{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 25px;
+		
+		img
+		{
+			width: 72px;
+			height: 72px;  
+		}
+	}
+
+	.gbt-info
+	{	
+		display: inline-block;
+		vertical-align: middle;
+		
+		> span
+		{
+			display: block;
+		}
+
+		.gbt-plugin-title
+		{
+			color: $grey;
+			font-size: 10px;
+			font-weight: bold; 
+			line-height: 12px; 
+			text-transform: uppercase; 
+		}
+
+		.gbt-theme-name
+		{
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 23px;
+			color: $black;    
+		}
+	}
+
+	.gbt-navigation
+	{
+		margin-top: 40px; 
+		
+		@media (max-width: 768px)
+		{
+			margin-top: 15px;
+		}
+
+		ul.gbt-menu
+		{
+			margin: 0;
+			padding-top: 15px;
+			height: 39px;
+			border-bottom: 1px solid #CCCCCC;
+			
+			@media (max-width:860px)
+			{
+				height: auto;
+				border-bottom: none; 
+			}
+			
+			&:after
+			{
+				content: "";
+				display: block;
+				clear: both; 
+			}
+
+			li
+			{
+				display: block;
+				font-size: 16px; 
+				font-weight: 500;
+				line-height: 18px;
+				position: relative;
+				float: left;
+				text-align: center;
+				
+				@media (max-width: 860px)
+				{
+					float: none;
+					margin-bottom: 7px;
+				}
+					
+				&:first-child
+				{
+					margin-left: 0; 
+				}
+				
+				
+				a
+				{
+					border: 1px solid #CCCCCC;
+					background-color: #E5E5E5;
+					padding: 10px 15px; 
+					margin-right: 10px; 
+					display: inline-block;
+					
+					@media (max-width: 860px)
+					{
+						display: block;
+						margin-right: 0;
+					}
+					
+					&.current
+					{
+						background-color: #F1F1F1;
+						border-bottom: 1px solid #F1F1F1;
+						
+						@media (max-width: 860px)
+						{
+							border: 1px solid #CCCCCC;
+						}
+					}
+				}
+			
+				
+				a
+				{
+					text-decoration: none; 
+					color: $black; 
+					font-weight: 500; 
+					padding-bottom: 10px;
+					
+					&:hover
+					{
+						color: #00A0D2; 
+					}
+					
+				}
+			}
+
+		}
+
+	}
+}

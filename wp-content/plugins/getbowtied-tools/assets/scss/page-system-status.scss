@@ -1,0 +1,112 @@
+//==============================================================================
+// GB Tools Plugin - System Status
+//==============================================================================
+
+
+.gtb-system-status
+{
+	position: relative;
+	
+	.gbt-sub-menu
+	{
+		li
+		{
+			margin-bottom: 0;
+			
+			&.back-to
+			{
+				height: 28px; 
+				color: #0073AA; 
+				font-weight: 500;
+				line-height: 28px;
+			}
+				
+		}
+	}
+
+	table
+	{
+		width: 100%;
+		font-size: 16px; 
+		box-shadow: 0 1px 1px rgba(0,0,0,.04);
+		border-collapse: collapse;
+		margin-bottom: 40px; 
+		
+		thead
+		{
+			font-weight: bold;
+			border-bottom: 1px solid #e5e5e5;
+			
+			th
+			{
+				text-align: left;
+				padding: 15px 30px;
+			}
+		}
+
+		tr
+		{
+			background-color: #FFF;
+			 
+			&:nth-child(odd) 
+			{
+			    background-color: #FCFCFC;
+			}
+			
+			td
+			{
+				width: 60%; 
+				padding: 15px 30px;
+				
+				@media (max-width: 640px)
+				{
+					padding: 10px 7px; 
+					
+					&:nth-child(even)
+					{
+						text-align: right;
+					}
+				}
+				
+				mark
+				{
+					font-weight: 500;
+					background: none; 
+					
+					span
+					{
+						@media (max-width: 640px)
+						{
+							margin-right: 5px;
+						}
+					}
+					
+					.dashicons-yes
+					{
+						color: #7ad03a; 
+					}
+
+					.dashicons-warning
+					{
+						color: #a00; 
+					}
+				}
+				
+				&:first-child
+				{
+					width: 40%; 
+					
+					@media (max-width: 640px)
+					{
+						width: 60%; 
+					}
+				}
+			}
+		}
+		 
+		&.required_plugins
+		{
+			margin-top: 100px; 
+		}
+	}
+}

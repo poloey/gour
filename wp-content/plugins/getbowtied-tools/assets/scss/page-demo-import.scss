@@ -1,0 +1,181 @@
+//==============================================================================
+// GB Tools Plugin - Demo Import
+//==============================================================================
+
+.gbt-demo-import
+{
+	padding: 160px 0;
+	position: relative;
+	
+	.demo-object
+	{
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 75px; 
+		
+		@media (max-width: 860px)
+		{
+			padding: 0;
+		}
+		
+		.demo-import-icon
+		{
+			margin: 0 auto 36px; 
+			display: block;
+			text-align: center;
+			width: 72px;
+			height: 72px;  
+		}
+		
+		&.install-required-plugins
+		{
+			max-width: 407px;
+			
+			a.getbowtied-install-demo-button
+			{
+				background: none; 
+			}
+
+			p
+			{
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 26px;
+				color: $black; 
+				margin-bottom: 37px; 
+			}
+			
+		}
+		
+		a
+		{
+			display: inline-block;
+		}
+		
+		
+		a.demo-import-icon
+		{
+			margin-bottom: 47px; 
+		}
+
+		a.getbowtied-install-demo-button
+		{
+			text-decoration: none;
+			background: #FFF;
+			font-size: 16px;
+			color: #FFF;
+			font-weight: 500; 
+			background-color: #81B536;
+			box-shadow: inset 0 -3px 0 0 #6E9B2F;
+			border-radius: 3px;
+			border: 1px solid #6E9B2F;
+			padding: 23px 28px;
+			line-height: 0;
+			margin-bottom: 34px;
+			
+			&:hover
+			{
+				background-color: #79AF35;
+				box-shadow: inset 0 -3px 0 0 #6E9B2F;
+			}
+
+			&.clicked
+			{
+				color: rgba(255,255,255,0.5);
+				background-color: #79AF35;
+				box-shadow: inset 0 -3px 0 0 #6E9B2F;
+				cursor: not-allowed; 
+			}
+			
+		}
+
+	}
+
+	.importer-log
+	{
+		text-align: center;
+		
+		.status-log
+		{
+			font-size: 13px;
+			line-height: 22px;
+			color: #808080;  
+			padding-bottom: 9px;
+			
+			&.doing-ajax
+			{
+				&:before
+				{
+					width: 16px;
+				    height: 16px;
+				    margin-right: 8px; 
+				    margin-top: -4px;
+				    display: inline-block;
+				    vertical-align: middle;
+				    background: url(../../../../../wp-admin/images/spinner.gif);
+				    content: "";
+				    background-size: contain;
+				    background-repeat: no-repeat;
+				}
+			}
+			
+			&.ajax-done
+			{
+				&:before
+				{
+					content: "\f147";
+				    font-family: dashicons;
+    				text-decoration: inherit;
+    				display: inline-block;
+    				font-size: 20px;
+    				text-align: center;
+    				vertical-align: top;
+    				margin-right: 7px; 
+				}
+			}
+
+			&.ajax-error
+			{
+				color: #DD322A;
+				line-height: 16px;
+				max-width: 380px;
+				margin: 0 auto; 
+				font-weight: 500; 
+				 
+				&:before
+				{
+					content: "\f534";
+				    font-family: dashicons;
+    				text-decoration: inherit;
+    				display: inline-block;
+    				font-size: 20px;
+    				text-align: center;
+    				vertical-align: top;
+    				margin-right: 7px; 
+				}
+			}
+
+			&.status-final.status-success
+			{
+				a
+				{
+					display: inline-block;
+					
+					&:before
+					{
+						content: "\f147";
+					    font-family: dashicons;
+	    				text-decoration: inherit;
+	    				display: inline-block;
+	    				font-size: 20px;
+	    				text-align: center;
+	    				vertical-align: top;
+	    				margin-right: 7px; 
+					}
+				}
+			}
+
+
+		}
+	}
+}

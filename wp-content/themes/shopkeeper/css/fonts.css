@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Radnika';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/Radnika-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Radnika-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Radnika-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Radnika-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'Radnika';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Radnika-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Radnika-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Radnika-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Radnika-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+
+
+@font-face {
+  font-family: 'NeueEinstellung';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/NeueEinstellung-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/NeueEinstellung-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/NeueEinstellung-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/NeueEinstellung-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'NeueEinstellung';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/NeueEinstellung-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/NeueEinstellung-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/NeueEinstellung-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/NeueEinstellung-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+}

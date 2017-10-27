@@ -1,0 +1,75 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Shopkeeper-Icon-Font';
+  src:  url('#{$icomoon-font-path}/Shopkeeper-Icon-Font.eot?21221n');
+  src:  url('#{$icomoon-font-path}/Shopkeeper-Icon-Font.eot?21221n#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/Shopkeeper-Icon-Font.woff2?21221n') format('woff2'),
+    url('#{$icomoon-font-path}/Shopkeeper-Icon-Font.ttf?21221n') format('truetype'),
+    url('#{$icomoon-font-path}/Shopkeeper-Icon-Font.woff?21221n') format('woff'),
+    url('#{$icomoon-font-path}/Shopkeeper-Icon-Font.svg?21221n#Shopkeeper-Icon-Font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Shopkeeper-Icon-Font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.spk-icon-warning {
+  &:before {
+    content: $spk-icon-warning;
+  }
+}
+.spk-icon-arrow-left {
+  &:before {
+    content: $spk-icon-arrow-left;
+  }
+}
+.spk-icon-arrow-right {
+  &:before {
+    content: $spk-icon-arrow-right;
+  }
+}
+.spk-icon-view {
+  &:before {
+    content: $spk-icon-view;
+  }
+}
+.spk-icon-heart-full {
+  &:before {
+    content: $spk-icon-heart-full;
+  }
+}
+.spk-icon-heart {
+  &:before {
+    content: $spk-icon-heart;
+  }
+}
+.spk-icon-cart-shopkeeper {
+  &:before {
+    content: $spk-icon-cart-shopkeeper;
+  }
+}
+.spk-icon-noun_150444 {
+  &:before {
+    content: $spk-icon-noun_150444;
+  }
+}
+.spk-icon-search {
+  &:before {
+    content: $spk-icon-search;
+  }
+}
+

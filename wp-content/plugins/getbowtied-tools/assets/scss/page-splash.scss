@@ -1,0 +1,40 @@
+//==============================================================================
+// GB Tools Plugin - Welcome Page
+//==============================================================================
+
+
+.splash-page
+{
+	max-width: 415px; 
+	margin: 148px auto;
+	text-align: center;
+	
+	@media (max-width: 768px)
+	{
+		margin: 34px auto 22px;
+	}
+		
+	.welcome-icon
+	{
+		line-height: 0;
+		margin-bottom: 32px; 
+		text-align: center;
+		
+		img
+		{
+			width: 72px;
+			height: 72px;  
+		}
+	}
+
+	.welcome-text
+	{
+		color: $black;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 26px;
+		text-align: center;  
+		margin-bottom: 40px;
+	}
+	
+}

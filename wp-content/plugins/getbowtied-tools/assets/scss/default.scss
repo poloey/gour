@@ -1,0 +1,249 @@
+//==============================================================================
+// GB Tools Plugin - Global Styles
+//==============================================================================
+
+// Color Variables
+
+$grey      : #9B9B9B;
+$black     : #23282D;
+
+.toplevel_page_getbowtied-tools,
+.shopkeeper_page_getbowtied-plugin-setup,
+.shopkeeper_page_getbowtied-demo-import,
+.shopkeeper_page_getbowtied-theme-activation,
+.shopkeeper_page_getbowtied-system-status,
+
+.merchandiser_page_getbowtied-plugin-setup,
+.merchandiser_page_getbowtied-demo-import,
+.merchandiser_page_getbowtied-theme-activation,
+.merchandiser_page_getbowtied-system-status,
+
+
+.mr-tailor_page_getbowtied-plugin-setup,
+.mr-tailor_page_getbowtied-demo-import,
+.mr-tailor_page_getbowtied-theme-activation,
+.mr-tailor_page_getbowtied-system-status,
+
+.the-retailer_page_getbowtied-plugin-setup,
+.the-retailer_page_getbowtied-demo-import,
+.the-retailer_page_getbowtied-theme-activation,
+.the-retailer_page_getbowtied-system-status
+
+{
+	#screen-meta-links
+	{
+		margin: 0 14px 0 0;
+		
+		.screen-meta-toggle	
+		{
+			z-index: 99; 
+		}	
+	}
+
+	#screen-meta
+	{
+		margin: 0 14px -1px 15px;
+	}
+
+	#wpbody-content
+	{
+		@media (min-width: 861px)
+		{
+			padding-left: 25px;
+			box-sizing: border-box;
+		}
+	}
+
+	.wrap
+	{
+		padding-left: 15px;
+		margin: 10px 20px 0 0; 
+	}
+
+	#wpfooter
+	{
+		margin-left: 0;
+	}
+
+	#wpbody-content > div:not(.wrap)
+	{
+		margin-left: 15px
+	}
+
+	.update-nag + .wrap >  h1.transparent 
+	{
+		display: none;
+	}
+
+}
+
+
+
+
+.wrap
+{
+
+	&.gbt-wrap
+	{
+		@media (max-width: 640px)
+		{
+			margin-top: 25px;
+		} 
+
+		> h1.transparent
+		{
+			visibility: hidden;
+			opacity: 0;
+			
+			@media (max-width: 860px)
+			{
+				display: none;
+			} 
+		}
+		
+	}
+	
+
+	div:not(#vc_license-activation-notice) + .gbt-container
+	{
+		padding-top: 45px;
+		
+		@media (max-width: 768px)
+		{
+			padding-top: 37px;
+		}
+	}
+
+
+
+	.gbt-container
+	{
+		max-width: 1051px;
+		padding: 0 60px 0 0;
+		
+		
+		@media (max-width: 860px)
+		{
+			padding: 46px 34px 46px 21px;
+		}
+
+		a
+		{
+			text-decoration: none;
+		}
+
+		.button
+		{
+			text-transform: capitalize; 
+		}
+
+		.gbt-sub-menu
+		{
+			position: absolute;
+			right: 0;
+			top: 0; 
+			margin-top: 32px;
+			margin-bottom: 0;
+			
+			
+			@media (max-width: 768px)
+			{
+				margin: 26px auto 22px;
+			}
+			
+			li
+			{
+				font-size: 13px; 
+				display: inline-block;
+				vertical-align: middle;
+				
+				&.back-to
+				{
+					margin-right:  10px;
+				}
+				
+				a
+				{
+					&.button
+					{
+						padding: 0 11px 0 7px;
+				
+						&.required
+						{
+							color: #DD322A; 
+							padding: 0 11px 0 7px;
+						    line-height: 26px;
+						}
+					}
+					
+					
+					.dashicons
+					{
+						font-size: 16px;
+						display: inline-block;
+						vertical-align: middle; 
+						margin-right: 5px;
+						margin-top: -3px;  
+						height: auto;
+					}
+				}
+			}
+
+		}
+	}
+
+}
+
+
+
+.gtb-system-status
+{
+	.gbt-sub-menu
+	{
+		@media (max-width: 768px)
+		{
+			margin: 18px auto 22px;
+		}
+	}
+	
+}
+
+
+li#wp-admin-bar-getbowtied_theme_update_available
+{
+	a.ab-item
+	{
+		&:hover
+		{
+			&:before
+			{
+				 color: #DD322A; 
+			}
+		}
+		
+		&:before
+		{
+			content: "\f463";
+		    display: inline-block;
+		    vertical-align: middle;
+		    color: #DD322A; 
+		    font-size: 20px;
+		    line-height: 24px;
+		}
+	}
+}
+
+#toplevel_page_getbowtied-tools 
+{
+	.wp-menu-image 
+	{
+		&:before 
+		{
+			content: "\f108";
+		}
+	}
+
+	li:nth-last-child(2) {
+		display: none;
+	}
+}

@@ -1,0 +1,216 @@
+.gbt-activation
+{
+	text-align: center;
+	margin: 140px 0;
+	
+	@media (max-width: 860px)
+	{
+		margin: 34px auto 22px;
+	}
+	
+	.theme-activation
+	{	
+		max-width: 474px;
+		margin: 0 auto;
+		
+		img
+		{
+			width: 72px;
+			height: 72px;  
+		}
+		
+		&.theme-is-active
+		{
+			max-width: 648px;
+			margin: 0 auto;
+			
+			.button
+			{
+				&.check-for-updates
+				{
+					margin-right: 10px; 
+					padding-right: 11px;
+					
+					> span
+					{
+						display: inline-block;
+						font-size: 16px;
+						margin-right: 5px;
+						margin-top: -3px; 
+						color: #EF5D01;
+						height: 16px;
+						width: 17px;
+						vertical-align: middle;
+						
+					}
+				}
+			}
+
+			.disconnect-form
+			{
+				display: inline-block;
+				margin-bottom: 45px;
+			}
+
+			.refresh-info {
+				display: inline-block;
+				margin-bottom: 45px;
+				margin-right: 10px;
+			}
+			
+			table.username-info
+			{
+				
+				border-collapse: collapse; 
+				color: $black; 
+				font-family: Courier;
+				font-size: 15px;
+				font-weight: bold;
+				line-height: 18px;
+				margin-bottom: 50px; 
+				text-align: left;
+				
+				tr
+				{
+					td
+					{
+						border-top: 1px solid #CCCCCC;
+						border-bottom: 1px solid #CCCCCC; 
+						
+						&.col-left
+						{
+							padding: 10px 0 10px 60px;  
+							
+							@media (max-width: 640px)
+							{
+								padding: 10px 0 10px 0;
+							}
+						}
+
+						&.col-right
+						{
+							padding: 10px 60px 10px 30px;  
+							
+							@media (max-width: 640px)
+							{
+								padding: 10px 0 10px 20px;  
+							}
+							
+							.expired
+							{
+								color: #a00;
+								text-transform: uppercase; 
+							}
+
+							.extend
+							{
+								color: #00a0d2;
+								text-transform: capitalize; 
+							}
+						}
+					}
+				}
+			}
+		}
+
+		img
+		{
+			display: block;
+			text-align: center;
+			margin: 0 auto 34px;
+		}
+
+		p
+		{
+			font-size: 20px;
+			font-weight: 500; 
+			line-height: 26px;  
+			color: $black; 
+			margin-bottom: 43px; 
+			
+			&.your-purchase-enable
+			{
+				color: $grey; 
+				font-size: 13px;
+				font-weight: normal; 
+				margin-top: 0;
+				line-height: 16px; 
+				max-width: 370px;
+				margin: 0 auto;
+				
+				> a
+				{
+					color: #0073aa
+					
+					&:hover
+					{
+						color: #00A0D2;
+					}
+				}
+
+				&.theme-active
+				{
+					max-width: 100%; 
+					color: $grey; 
+					line-height: 18px;
+				}
+			}
+		}
+
+		.gbt-btn
+		{
+			display: inline-block;
+			background: #81b536;
+			padding: 13px 24px 14px;
+			margin-bottom: 45px; 
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 16px; 
+			font-weight: 500; 
+			box-shadow: inset 0px -3px 0px 0px rgba(110,155,47,1);
+			border: 1px solid rgba(110,155,47,1);
+			border-radius: 3px;
+			vertical-align: middle;
+			box-sizing: border-box;
+			
+			@media (max-width: 480px)
+			{
+				padding:  13px 0 14px;
+				width: 100%; 
+			}
+			
+			&:before
+			{
+			    width: 20px;
+			    height: 20px;
+			    margin-right: 8px; 
+			    margin-top: -4px;
+			    display: inline-block;
+			    vertical-align: middle;
+			    background: url(../images/envato_icon.png);
+			    content: "";
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			}			
+		}
+
+		
+	}
+}
+
+.getbowtied_theme_activation > a
+{
+	&:before
+	{
+		content: "\f528";
+		color: #DD322A !important; 
+	    font-family: dashicons;
+		text-decoration: inherit;
+		display: inline-block;
+		font-size: 20px;
+		text-align: center;
+		vertical-align: top;
+		margin-right: 5px; 
+		margin-top: 2px;
+	}
+}
